@@ -12,11 +12,12 @@ form.addEventListener('submit', async (e) => {
   appendMessage('Max AI', 'Thinking...');
 
   try {
-    const res = await fetch('https://your-backend-url.com/ask', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: userText })
-    });
+   const res = await fetch('https://max-ai-backend.onrender.com/ask', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ message: userText })
+});
+
 
     const data = await res.json();
     updateLastMessage(data.reply);
