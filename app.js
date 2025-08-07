@@ -12,7 +12,7 @@ form.addEventListener('submit', async (e) => {
   appendMessage('Max AI', 'Thinking...');
 
   try {
-   const res = await fetch('https://max-ai-backend-y885.onrender.com/ask', {
+   const res = await fetch('https://pbellay.hf.space/ask', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
